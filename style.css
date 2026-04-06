@@ -375,4 +375,157 @@ body.night-mode .footer-right a:hover {
 
 
 /* ================= RESPONSIVE DESIGN ================= */
+/* ================= RESPONSIVE DESIGN ================= */
 
+/* Tablets */
+@media (max-width: 1200px) {
+
+    .featured-games {
+        padding: 15px;
+    }
+
+    .featured-games h2 {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .game-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 25px;
+    }
+
+    .game-card img {
+        height: 110px;
+    }
+}
+
+
+/* Phones */
+@media (max-width: 1200px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav {
+        display: none; /* hide top nav links */
+    }
+
+    .menu-icon {
+        font-size: 22px;
+    }
+
+    /* Content boxes */
+    .content-box,
+    .content-box1 {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    /* Section titles */
+    .featured-games h2 {
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .featured-games .view-all {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    /* Game grid */
+    .game-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    /* Cards */
+    .game-card img {
+        height: 90px;
+    }
+
+    .game-card h3 {
+        font-size: 13px;
+        margin: 8px 0;
+    }
+
+    .game-card button {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    /* Sidebar */
+    .sidebar a {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-right a {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .footer-left h3 {
+        font-size: 18px;
+    }
+
+    .footer-left p {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 11px;
+    }
+}
+
+
+/* Small Phones */
+@media (max-width: 1200px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .featured-games h2 {
+        font-size: 24px;
+    }
+
+    .game-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .game-card img {
+        height: 80px;
+    }
+
+    .game-card h3 {
+        font-size: 12px;
+    }
+
+    .game-card button {
+        font-size: 11px;
+        padding: 4px 6px;
+    }
+}
