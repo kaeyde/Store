@@ -25,14 +25,17 @@ body {
     background-color: #ebe9e9;
     padding: 25px 40px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
 }
 
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 50px;
-    width: 100%;
+    width: 1200px;
+    padding: 10px 0;
 }
 
 .menu-icon {
