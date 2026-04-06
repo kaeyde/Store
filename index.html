@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Trove | Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> <!-- Navbar / Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+            <div class="logo">✦ Treasure Trove ✦</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Service</a></li>
+                </ul>
+            </nav> <!-- Night Mode Toggle --> <button id="nightModeToggle" class="night-toggle">⏾</button>
+        </div>
+    </header> <!-- Sidebar -->
+    <div id="mySidebar" class="sidebar"> <a href="javascript:void(0)" class="closebtn"
+            onclick="closeSidebar()">&times;</a> <a href="#">Home</a> <a href="#">Games</a> <a href="#">Shop</a> <a
+            href="#">Contact</a> </div>
+    <div class="main-content">
+        <div class="content-box1">
+            <section class="featured-games">
+                <div class="header">
+                    <h2>Popular Purchases</h2>
+                </div>
+                <div class="game-grid">
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/Soon.jpg" alt="Blox Fruit">
+                        <h3>???</h3> <button>Unavailable</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/Soon.jpg" alt="Blox Fruit">
+                        <h3>???</h3> <button>Unavailable</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/Soon.jpg" alt="Blox Fruit">
+                        <h3>???</h3> <button>Unavailable</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/Soon.jpg" alt="Blox Fruit">
+                        <h3>???</h3> <button>Unavailable</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/Soon.jpg" alt="Blox Fruit">
+                        <h3>???</h3> <button>Unavailable</button>
+                    </div>
+                </div>
+        </div>
+        </section>
+    </div>
+    </div> <!-- Main Content Box -->
+    <div class="main-content">
+        <div class="content-box">
+            <section class="featured-games">
+                <div class="header">
+                    <h2>Featured Games</h2> <span class="view-all">View All</span>
+                </div>
+                <div class="game-grid">
+                    <div class="game-card">
+                        <div class="badge popular">Popular</div> <img src="/Card Covers/SailorPiece.jpg"
+                            alt="Sailor Piece">
+                        <h3>Sailor Piece</h3> <button>Go to</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge new">New</div> <img src="/Card Covers/GTD.jpg" alt="Garden Tower Defense">
+                        <h3>Garden Tower Defense</h3> <button>Go to</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/SAB.jpg" alt="Steal A Brainrot">
+                        <h3>Steal A Brainrot</h3> <button>Unavailable</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/ADM.jpg" alt="Adopt Me">
+                        <h3>Adopt Me</h3> <button>Unavailable</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/MM2.jpg" alt="Murder Mystery 2">
+                        <h3>Murder Mystery 2</h3> <button>Unavailable</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/BB.jpg" alt="Blade Ball">
+                        <h3>Blade Ball</h3> <button>Unavailable</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/PVZ.jpg" alt="Plants Vs. Brainrot">
+                        <h3>Plants Vs. Brainrot</h3> <button>Unavailable</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/BF.jpg" alt="Blox Fruit">
+                        <h3>Blox Fruit</h3> <button>Unavailable</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/Soon.jpg" alt="Blox Fruit">
+                        <h3>???</h3> <button>Unavailable</button>
+                    </div>
+                    <div class="game-card">
+                        <div class="badge hot">Soon</div> <img src="/Card Covers/Soon.jpg" alt="Blox Fruit">
+                        <h3>???</h3> <button>Unavailable</button>
+                    </div>
+                </div>
+        </div>
+        </section>
+    </div>
+    </div>
+    
+    <!-- Scripts -->
+
+     <!-- Scripts -->
+    <script>
+        const sidebar = document.getElementById("mySidebar");
+        const toggleBtn = document.getElementById('nightModeToggle');
+
+        // Toggle sidebar open/close
+        function toggleSidebar() {
+            if (sidebar.style.width === "250px") {
+                sidebar.style.width = "0";
+            } else {
+                sidebar.style.width = "250px";
+            }
+        }
+
+        // Close sidebar
+        function closeSidebar() {
+            sidebar.style.width = "0";
+        }
+
+        // Close sidebar if click outside
+        window.addEventListener('click', function(e) {
+            if (!sidebar.contains(e.target) && !e.target.classList.contains('menu-icon')) {
+                closeSidebar();
+            }
+        });
+
+        // Night Mode toggle
+        toggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('night-mode');
+            toggleBtn.textContent = document.body.classList.contains('night-mode') ? '☀︎' : '⏾';
+        });
+    </script>
+    </body>
+
+</html>
