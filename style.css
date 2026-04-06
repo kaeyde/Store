@@ -378,7 +378,7 @@ body.night-mode .footer-right a:hover {
 /* ================= RESPONSIVE DESIGN ================= */
 
 /* Tablets */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
 
     .featured-games {
         padding: 15px;
@@ -402,7 +402,7 @@ body.night-mode .footer-right a:hover {
 
 
 /* Phones */
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
 
     /* Navbar */
     .navbar {
@@ -501,7 +501,7 @@ body.night-mode .footer-right a:hover {
 
 
 /* Small Phones */
-@media (max-width: 1200px) {
+@media (max-width: 480px) {
 
     .logo {
         font-size: 18px;
